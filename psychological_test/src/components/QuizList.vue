@@ -27,7 +27,7 @@ export default {
   methods: {
     async fetchQuiz() {
       try {
-        const response = await axios.get('http://localhost:5000/api/quiz');
+        const response = await axios.get('http://localhost:3000/api/quiz');
         this.quiz = response.data;
       } catch (error) {
         console.error('Error fetching quiz:', error);

@@ -35,7 +35,7 @@ export default {
   methods: {
     async fetchQuiz() {
       try {
-        const response = await axios.get(`http://localhost:5000/api/quiz?id=${this.$route.params.id}`);
+        const response = await axios.get(`http://localhost:3000/api/quiz?id=${this.$route.params.id}`);
         this.quiz = response.data;
       } catch (error) {
         console.error('Error fetching quiz:', error);
@@ -43,7 +43,7 @@ export default {
     },
     async submitQuiz() {
       try {
-        const response = await axios.post('http://localhost:5000/api/result', {
+        const response = await axios.post('http://localhost:3000/api/result', {
           quizId: this.quiz.id,
           answers: this.answers
         });
@@ -55,3 +55,4 @@ export default {
   }
 }
 </script>
+
