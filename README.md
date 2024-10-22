@@ -2,22 +2,6 @@
 
 這是一個基於 Vue 3 和 Flask 的心理測驗網站。用戶可以參加各種有趣的測驗，並分享結果。
 
-## 目錄結構
-daily_psychological_test_WEB/
-├── psychological_test/
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── QuizList.vue
-│ │ │ ├── Quiz.vue
-│ │ │ └── Result.vue
-│ │ ├── router/
-│ │ │ └── index.js
-│ │ ├── App.vue
-│ │ └── main.js
-│ ├── vue.config.js
-│ └── package.json
-└── backend/
-└── app.py
 
 ## 前端技術
 
